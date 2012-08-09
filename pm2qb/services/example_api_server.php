@@ -35,7 +35,7 @@ ini_set('display_errors', 1);
 require_once 'QuickBooks.php';
 
 // Database DSN-style connection string which stores the queue and logging tables
-$dsn = 'mysql://root:123456y@192.168.0.96/wf_workflow';
+$dsn = 'mysql://root:sample@192.168.1.86/wf_HSU';
 
 // This should match the user you used to queue things up with in the QuickBooks_API client
 $user = 'quickbooks';

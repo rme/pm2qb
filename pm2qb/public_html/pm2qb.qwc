@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <QBWCXML>
-	<AppName>PMOS-2-QB Jul 25</AppName>
+	<AppName>PMOS-2-QB, Aug 9</AppName>
 	<AppID></AppID>
-	<AppURL>http://192.168.0.96/sysworkflow/classic/pm2qb/services/example_api_server.php</AppURL>
+	<AppURL>http://192.168.1.86/sysHSU/classic/pm2qb/services/example_api_server.php</AppURL>
 	<AppDescription></AppDescription>
-	<AppSupport>http://192.168.0.96/sysworkflow/classic/pm2qb/services/example_api_server.php?support=1</AppSupport>
+	<AppSupport>http://192.168.1.86/sysHSU/classic/pm2qb/services/example_api_server.php?support=1</AppSupport>
 	<UserName>quickbooks</UserName>
-	<OwnerID>{57F3B9B6-86F1-4FCC-B1FF-966DE1813D21}</OwnerID>
-	<FileID>{57F3B9B6-86F1-4fcc-B1FF-967DE1813D21}</FileID>
+	<OwnerID>{57F3B9B6-86F1-4FCC-B1FF-966DE1813D29}</OwnerID>
+	<FileID>{57F3B9B6-86F1-4fcc-B1FF-967DE1813D29}</FileID>
 	<QBType>QBFS</QBType>
 	<Scheduler>
 		<RunEveryNMinutes>10</RunEveryNMinutes>

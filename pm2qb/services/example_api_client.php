@@ -23,7 +23,7 @@ require_once 'QuickBooks.php';
 $user = 'quickbooks';
 $source_type = QUICKBOOKS_API_SOURCE_WEB;
 //$api_driver_dsn = 'mysql://root:123456y@localhost/quickbooks_api';
-$api_driver_dsn = 'mysql://root:123456y@localhost/wf_workflow';
+$api_driver_dsn = 'mysql://root:sample@192.168.1.86/wf_HSU';
 //$api_driver_dsn = 'pgsql://pgsql@localhost/quickbooks';
 $source_dsn = 'http://quickbooks:password@localhost/qb/HSU/example_api_server.php';
 $api_options = array();
@@ -39,10 +39,10 @@ if (!QuickBooks_Utilities::initialized($api_driver_dsn))
 $API = new QuickBooks_API($api_driver_dsn, $user, $source_type, $source_dsn, $api_options, $source_options, $driver_options);
 
 
-$dac = $REQUEST["dac"];
-$dam = $REQUEST["dam"];
-$cac = $REQUEST["cac"];
-$cam = $REQUEST["cam"];
+$dac = $_REQUEST["dac"];
+$dam = $_REQUEST["dam"];
+$cac = $_REQUEST["cac"];
+$cam = $_REQUEST["cam"];
 
 
 //-------------------------------------------------------------------------------------------------------------------------------
