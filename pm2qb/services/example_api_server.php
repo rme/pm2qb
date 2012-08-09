@@ -31,7 +31,7 @@ ini_set('display_errors', 1);
  * QuickBooks base classes
  */
 
-set_include_path(PATH_PLUGINS . 'quickbooks' . PATH_SEPARATOR . get_include_path());
+//777 set_include_path(PATH_PLUGINS . 'quickbooks' . PATH_SEPARATOR . get_include_path());
 require_once 'QuickBooks.php';
 
 // Database DSN-style connection string which stores the queue and logging tables

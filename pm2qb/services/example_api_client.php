@@ -130,6 +130,11 @@ $API->listAccountsModifiedAfter($datetime, '_quickbooks_account_query_callback')
 //$datetime = '2009-01-02 01:02:03';
 //$API->listAccountsModifiedAfter($datetime, '_quickbooks_account_query_callback');
 
+$dac = $REQUEST["dac"];
+$dam = $REQUEST["dam"];
+$cac = $REQUEST["cac"];
+$cam = $REQUEST["cam"];
+
 
 //-------------------------------------------------------------------------------------------------------------------------------
 // Journal entry
@@ -139,13 +144,17 @@ $JournalEntry->setTransactionDate('July 23, 2012');
 
 $DebitLine = new QuickBooks_Object_JournalEntry_JournalDebitLine();
 $DebitLine->setAmount(45.0);
-$DebitLine->setAccountName('Travel Expense');
-$JournalEntry->addDebitLine($DebitLine);
+//$DebitLine->setAccountName('Travel Expense');
+//$JournalEntry->addDebitLine($DebitLine);
+$DebitLine->setAccountName($dac);
+$JournalEntry->addDebitLine($dam);
 
 $CreditLine = new QuickBooks_Object_JournalEntry_JournalCreditLine();
 $CreditLine->setAmount(45.0);
-$CreditLine->setAccountName('Bank Account XYZ');
-$JournalEntry->addCreditLine($CreditLine);
+//$CreditLine->setAccountName('Bank Account XYZ');
+//$JournalEntry->addCreditLine($CreditLine);
+$CreditLine->setAccountName($cac);
+$JournalEntry->addCreditLine($cam);
 
 if ($API->addJournalEntry(
 	$JournalEntry, 
